@@ -28,7 +28,7 @@
 #define PFin(n)		( ((GPIOF->IDR)&(1<<(n)))>>(n) )
 
 // Êä³ö
-/* bit-bond struct */
+/* bit-band struct */
 typedef struct{
 	uint16_t bit0: 1;
 	uint16_t bit1: 1;
