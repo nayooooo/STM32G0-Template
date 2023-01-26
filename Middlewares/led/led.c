@@ -16,6 +16,8 @@ static void LED_GPIO_Config(void)
 void LED_Init(void)
 {
 	LED_GPIO_Config();
+	
+	LED = LED_OFF;
 }
 
 void LED_Toggle(void)

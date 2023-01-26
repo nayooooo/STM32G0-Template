@@ -29,7 +29,7 @@
 
 // 输出
 /* bit-band struct */
-typedef struct{
+typedef struct{  // These bits can be read and written by software.
 	uint16_t bit0: 1;
 	uint16_t bit1: 1;
 	uint16_t bit2: 1;
@@ -55,9 +55,15 @@ typedef struct{
 #define PFout(n)	( ((Bits16_TypeDef*)(&(GPIOF->ODR)))->bit##n )
 
 // 初始化时钟树
-void SystemClock_Config(void);
+void sys_stm32_clock_init(void);
+
+void sys_wfi_set(void);
+void sys_standby(void);
+void sys_soft_reset(void);
 
 void Error_Handler(void);
+#ifdef  USE_FULL_ASSERT
 void assert_failed(uint8_t *file, uint32_t line);
+#endif /* USE_FULL_ASSERT */
 
 #endif /* __SYS_H */

@@ -1,5 +1,5 @@
-./objects/stm32g0xx_hal_gpio.o: \
-  ..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_gpio.c \
+./objects/stm32g0xx_hal_uart_ex.o: \
+  ..\Drivers\STM32G0xx_HAL_Driver\Src\stm32g0xx_hal_uart_ex.c \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal.h \
   ..\User\stm32g0xx_hal_conf.h \
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_rcc.h \

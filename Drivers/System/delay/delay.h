@@ -6,6 +6,6 @@
 void delay_Init(uint8_t SYSCLK_M);
 
 void delay_us(uint32_t nus);
-void delay(uint32_t nms);
+void delay_ms(uint32_t nms);
 
 #endif /* __DELAY_H */

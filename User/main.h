@@ -3,6 +3,7 @@
 
 #include "sys.h"
 #include "delay.h"
+#include "usart.h"
 
 #include "led.h"
 
