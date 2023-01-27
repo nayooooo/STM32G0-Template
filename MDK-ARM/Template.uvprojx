@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Drivers\CMSIS;..\Drivers\STM32G0xx_HAL_Driver\Inc;..\Drivers\System\sys;..\Drivers\System\delay;..\Drivers\System\usart;..\User;..\Middlewares\led</IncludePath>
+              <IncludePath>..\Drivers\CMSIS;..\Drivers\STM32G0xx_HAL_Driver\Inc;..\Drivers\System\sys;..\Drivers\System\delay;..\Drivers\System\usart;..\User;..\Drivers\BSP\LED</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -392,7 +392,37 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>HAL</GroupName>
+          <GroupName>User</GroupName>
+          <Files>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32g0xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\stm32g0xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>system_stm32g0xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\system_stm32g0xx.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32g0xx_hal_msp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\stm32g0xx_hal_msp.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32g0xx_hal_conf.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\stm32g0xx_hal_conf.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Drivers/HAL</GroupName>
           <Files>
             <File>
               <FileName>stm32g0xx_hal.c</FileName>
@@ -457,7 +487,7 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>System</GroupName>
+          <GroupName>Drivers/System</GroupName>
           <Files>
             <File>
               <FileName>sys.c</FileName>
@@ -477,42 +507,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>User</GroupName>
-          <Files>
-            <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\main.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32g0xx_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\stm32g0xx_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>system_stm32g0xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\system_stm32g0xx.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32g0xx_hal_msp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\User\stm32g0xx_hal_msp.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32g0xx_hal_conf.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\User\stm32g0xx_hal_conf.h</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Hardware</GroupName>
+          <GroupName>Drivers/BSP</GroupName>
           <Files>
             <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\Middlewares\led\led.c</FilePath>
+              <FilePath>..\Drivers\BSP\LED\led.c</FilePath>
             </File>
           </Files>
         </Group>

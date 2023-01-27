@@ -64,4 +64,4 @@
   ..\Drivers\STM32G0xx_HAL_Driver\Inc\stm32g0xx_hal_wwdg.h \
   ..\Drivers\System\delay\delay.h ..\Drivers\System\usart\usart.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
-  ..\Middlewares\led\led.h
+  ..\Drivers\BSP\LED\led.h

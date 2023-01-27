@@ -7,7 +7,7 @@
 #include "stm32g0xx_hal_gpio.h"
 
 #define LED_GPIO_PORT				GPIOB
-#define LED_GPIO_PIN				GPIO_PIN_0
+#define LED_PIN						GPIO_PIN_0
 
 typedef enum{
 	LED_ON = 0,

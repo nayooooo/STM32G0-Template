@@ -1,4 +1,4 @@
-./objects/led.o: ..\Middlewares\led\led.c ..\Middlewares\led\led.h \
+./objects/led.o: ..\Drivers\BSP\LED\led.c ..\Drivers\BSP\LED\led.h \
   ..\Drivers\System\sys\sys.h ..\Drivers\CMSIS\stm32g0xx.h \
   ..\Drivers\CMSIS\stm32g030xx.h ..\Drivers\CMSIS\core_cm0plus.h \
   D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
